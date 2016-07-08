@@ -1,7 +1,8 @@
 
-/***** General Outlay ****************************************/
+/********** General Outlay ****************************************/
 
-/***** General Text Formating *****/
+
+/********** General Text Formating *****/
 
 /* Color Schemes */
 :root{
@@ -50,7 +51,8 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
-/***** Main Bar Formatting *****/
+
+/********** Main Bar Formatting **********/
 #main-sidebar { 
     float: left;
     width: 17%;
@@ -58,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     background-color: #495054;
     color: white; 
-    margin-left: 1%;
+    margin-left: 0%;
 }
 
 /* Logo Formating */
@@ -108,24 +110,24 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #34393b;
 }
 
-li.home a { border-color: #2980b9; }
+/****** Button Colors ******/
 li a.active { color: #68c3ff; }
 
-li.resume a { border-color: #3293d2; }
+li.home a { border-color: var(--color-section1); ; }
+
+li.resume a { border-color: var(--color-section2); }
 
 li.portfolio a { border-color: var(--color-section3); }
-li.portfolio a.active { color: var(--color-section3); }
 
 li.about a { border-color: var(--color-section4); }
-li.about a.active { color: var(--color-section4); }
 
 li.contact a { border-color: var(--color-section5); }
-li.contact a.active { color: var(--color-section5); }
 
-/***** General Main Content Formatting *****/
+
+/********** General Main Content Formatting **********/
 #main-content, .full-width-slider { 
     float: right; 
-    width: 82%; 
+    width: 83%; 
 }
 
 .section-content {
@@ -161,7 +163,8 @@ a.largeButton.homeBgColor {
     border-color: #b4b4b4;
 }
 
-/***** Home Section ****************************************/
+
+/********** Home Section *********************************************/
 
 .homeBgColor {
     background: var(--color-section1);
@@ -170,23 +173,97 @@ a.largeButton.homeBgColor {
     background-color: var(--color-button-hover); 
 }
 
-/***** Resume Section ****************************************/
+
+/********** Resume Section *********************************************/
 
 #resume h2 {
     background-color: var(--color-section2); 
 }
+#resume h4{
+    font-weight: 700;
+    text-transform: uppercase; 
+    font-size: 120%; 
+    margin-bottom: 15px; 
+}
+#resume h5{
+    font-weight: 600;
+    font-size: 110%; 
+    margin-bottom: 10px; 
+}
+#resume li{
+    font-weight: 400;
+}
 
-.resume-item { background-color: var(--color-section2); color: white; }
-.resume-item .resume-icon { width: 25%; float: left; overflow: hidden; display: inline-block; text-align: center; margin-top: 30px; height: 100%; }
-.resume-item .resume-content { width: 75%; overflow: hidden; text-align: center; padding: 20px 20px 20px 0; }
-.resume-item .resume-content h3 { margin: 0; font-size: 20px; }
+.resume-item {
+    background-color: var(--color-section2); 
+    height: 80px;
+    color: white;
+    margin: 0 auto;
+}
+.resume-item .resume-icon { 
+    width: 25%; 
+    float: left; 
+    overflow: hidden; 
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px; 
+    height: 100%; 
+}
 
-.our-skills { margin-top: 80px; }
-.our-skills h3 { color: var(--color-section2); font-weight: 300; text-transform: uppercase; font-size: 24px; margin: 0 0 20px 0; }
 
-.progress-bar { background-color: var(--color-section2); text-transform: uppercase; font-size: 12px; }
+.resume-item .resume-content { 
+    width: 75%; 
+    overflow: hidden;
+    text-align: center; 
+}
+.resume-content{
+    border-left: 3px;
+    border-left-color: white;
+    border-left-style:ridge;
+    margin: auto auto;
+    height: 100%;
+}
+.resume-item h3, .resume-content h3 {
+    margin-top: 16px;
+    font-size: 140%;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: 10px;
+}
 
-/***** Portfolio Section ****************************************/
+.my-skills h3, .my-education h3, .my-expierence h3{ 
+    color: var(--color-section2);
+    font-weight: 300;
+    text-transform: uppercase; 
+    font-size: 170%; 
+    margin-bottom: 15px; 
+}
+
+.my-skills {
+    margin: 20px 5px;
+}
+
+
+.my-education {
+    margin: 10px 5px;
+}
+
+.my-expierence{
+    margin: 10px 5px;
+}
+.my-expierence-content{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.progress-bar { 
+    background-color: var(--color-section2);
+    text-transform: uppercase;
+    font-size: 12px; 
+}
+
+
+/********** Portfolio Section *********************************************/
 
 #portfolio h2 { 
     background-color: var(--color-section3); 
@@ -217,7 +294,8 @@ a.largeButton.portfolioBgColor {
 
 .load-more { width: 100%; text-align: center; }
 
-/***** About Me Section ****************************************/
+
+/********** About Me Section *********************************************/
 
 #about h2 {
     background-color: var(--color-section4); 
@@ -254,7 +332,8 @@ a.largeButton.portfolioBgColor {
     height: auto; 
 }
 
-/***** Contact Me Section ****************************************/
+
+/********** Contact Me Section *********************************************/
 
 #contact h2 {
     background-color: var(--color-section5);
@@ -298,7 +377,16 @@ a.largeButton.contactBgColor {
     margin-top: 30px; 
 }
 
-/***** Image Slider Design ****************************************/
+
+/********** Welcome Section Design *********************************************/
+
+.welcome-text { padding: 60px; text-align: center; }
+.welcome-text a { color: var(--color-section1); }
+.welcome-text h2 { color: var(--color-section1); font-weight: 300; text-transform: uppercase; font-size: 32px; }
+.welcome-text p { color: #aaaaaa; }
+
+
+/********** Image Slider Design ************************************************/
 
 .main-slider { width: 100%; height: 570px; }
 
@@ -318,14 +406,8 @@ a.largeButton.contactBgColor {
 .flex-control-paging li a:hover { opacity: 1; background: white; }
 .flex-control-paging li a.flex-active { opacity: 1; background: white; }
 
-/***** Welcome Section Design ****************************************/
 
-.welcome-text { padding: 60px; text-align: center; }
-.welcome-text a { color: var(--color-section1); }
-.welcome-text h2 { color: var(--color-section1); font-weight: 300; text-transform: uppercase; font-size: 32px; }
-.welcome-text p { color: #aaaaaa; }
-
-/***** Footer Section Design ****************************************/
+/********** Footer Section Design *********************************************/
 
 .first-footer { 
     background-color: #495054;
@@ -362,7 +444,8 @@ a.largeButton.contactBgColor {
     text-align: right;
 }
 
-/***** Responsive Menu Design ****************************************/
+
+/********** Responsive Menu Design *********************************************/
 
 a.menu-toggle-btn {
     width: 100%; 
@@ -396,7 +479,8 @@ a.menu-toggle-btn i {
     border-bottom: 1px solid #5a6267;
 }
 
-/***** Responsive Sizing Stuff ****************************************/
+
+/********** Responsive Sizing Stuff *********************************************/
 
 @media (max-width: 991px) {
     #main-content {
