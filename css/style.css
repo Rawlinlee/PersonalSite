@@ -276,8 +276,56 @@ a.largeButton.homeBgColor {
     background-color: var(--color-button-hover); 
 }
 
+.portfolio-item { 
+    background-color: #95a5a6;
+    max-width:100%;
+    position:relative;
+}
+.portfolio-content h3{
+    margin-top: 20px;
+    font-size: 250%;
+    font-weight: 300;
+    text-transform: none;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+.portfolio-content{
+    width:50%;
+    left:45%;
+    position:absolute;
+    display:inline;
+    top:0%;
+}
+.portfolio-image{
+    border: 20px 20px;
+    border-color: #34495e;
+    padding: 20px 20px;
+    width: 45%;
+}
+.portfolio-textbox{
+    font-weight: 100;
+}
+
 a.largeButton.portfolioBgColor { 
     border-color:  var(--color-button-hover);
+}
+
+.left-arrow-button, .right-arrow-button{
+    background-color: var(--color-section3);
+    opacity: 0.7;
+    position:absolute;
+    top:45%;
+}
+.left-arrow-button{
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    left:0%;
+}
+.right-arrow-button{
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    right:55%
 }
 
 .portfolio-thumb { overflow: hidden; position: relative; }
