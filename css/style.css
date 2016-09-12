@@ -26,7 +26,7 @@ body {
     color: #777777; 
     font-weight: 300; 
     font-style: normal;
-    font-size: 17px;
+    font-size: 2.5vmin;
     
     /* Fix for webkit rendering */
     -webkit-font-smoothing: antialiased; 
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Logo Formating */
 
 .logo { 
-    margin: 90px 0;
+    margin: 20% 0;
     background-color: #2980b9;
     padding: 25px 25px;
     text-align: center;
@@ -76,11 +76,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo a h1 { 
     text-transform: uppercase;
+    text-overflow: ellipsis;
+    display: inline-block;
     font-size: 190%;
     margin: 0;
     font-weight: 800;
 }
-.logo span {
+.logo h6 {
     color: #bee3f6; 
     font-size: 80%;
 }
@@ -196,7 +198,7 @@ a.largeButton.homeBgColor {
 
 .resume-item {
     background-color: var(--color-section2); 
-    height: 80px;
+    height: auto;
     color: white;
     margin: 0 auto;
 }
@@ -268,7 +270,9 @@ a.largeButton.homeBgColor {
 #portfolio h2 { 
     background-color: var(--color-section3); 
 }
-
+#portfolio p{
+    color:ghostwhite;
+}
 .portfolioBgColor {
     background: var(--color-section3);
 }
@@ -277,31 +281,34 @@ a.largeButton.homeBgColor {
 }
 
 .portfolio-item { 
-    background-color: #95a5a6;
+    padding: 40px 40px;
+    border: 50px;
+    border-color: var(--color-section3); 
     max-width:100%;
     position:relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
 }
 .portfolio-content h3{
-    margin-top: 20px;
-    font-size: 250%;
-    font-weight: 300;
+    margin: 0px;
+    font-size: 180%;
+    font-weight: 400;
     text-transform: none;
-    margin-bottom: 10px;
     color: white;
     text-align: center;
 }
 .portfolio-content{
-    width:50%;
-    left:45%;
-    position:absolute;
-    display:inline;
-    top:0%;
+    width:100%;
+    display:block;
+    padding-top: 20px;
 }
-.portfolio-image{
-    border: 20px 20px;
-    border-color: #34495e;
-    padding: 20px 20px;
-    width: 45%;
+.portfolio-image-box{
+    width:100%;
+}
+.portfolio-image img{
+    width:100%;
 }
 .portfolio-textbox{
     font-weight: 100;
@@ -315,7 +322,7 @@ a.largeButton.portfolioBgColor {
     background-color: var(--color-section3);
     opacity: 0.7;
     position:absolute;
-    top:45%;
+    top: 40%;
 }
 .left-arrow-button{
     border-top-left-radius: 30%;
@@ -325,7 +332,20 @@ a.largeButton.portfolioBgColor {
 .right-arrow-button{
     border-top-right-radius: 30%;
     border-bottom-right-radius: 30%;
-    right:55%
+    right:0%
+}
+.portfolio-item ul{
+    text-align: center;
+    padding: 0;
+}
+.portfolio-item ul li { 
+    display: inline; 
+}
+.store-button{
+    padding: 0 20px;
+}
+.store-button img{
+    width:30%;
 }
 
 .portfolio-thumb { overflow: hidden; position: relative; }

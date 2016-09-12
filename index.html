@@ -38,7 +38,7 @@
 	<div id="main-sidebar" class="hidden-xs hidden-sm">
 		<div class="logo">
 			<a href="#"><h1>Roland Li</h1></a>
-			<span>BBA/BCS Student &amp; Employee</span>
+			<h6>BBA/BCS Student &amp; Employee</h6>
 		</div> <!-- /.logo -->
 
 		<div class="navigation">
@@ -154,7 +154,7 @@
                         <li>Developed efficient algorithms to solve real problems, in imperative and functional programming</li>
                         <br>
                         <h4>Wilfrid Laurier University, Waterloo, ON</h4>
-                        <h5><b><i>Honours Business Administration, Co-op</i></b>: September 2015</h5>
+                        <h5><b><i>Honours Business Administration, Co-op</i></b>: September 2015 – Present</h5>
                         <li>Studied real-world business cases and strategies, implementing both micro and macro economic theory</li>
                         <br>
                         <h4>Pierre Elliott Trudea High School, Markham, ON</h4>
@@ -252,29 +252,60 @@
 				</div> <!-- /.row -->
 				<div class="row">
                     <div class="col-md-12">
-                        <div class="w3-content portfolio-item">
-                            <div class="w3-display-container mySlides">
-                              <img src="images/portfolio/1.jpg" class="portfolio-image">
-                              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black portfolio-textbox">
-                                The Rain Forest
-                              </div>
+                        <div class="w3-content portfolio-item" style="background-color: #90C695;">
+                            <div class="portfolio-image-box">
+                                <div class="w3-display-container portfolio-image gs-slide">
+                                    <img src="images/gamestudio/gs1.jpg">
+                                </div>
+                                <div class="w3-display-container portfolio-image gs-slide">
+                                    <img src="images/gamestudio/gs2.jpg">
+                                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black portfolio-textbox">
+                                    Feature Developement/UI Design
+                                  </div>
+                                </div>
+                                <div class="w3-display-container portfolio-image gs-slide">
+                                    <img src="images/gamestudio/gs3.jpg">
+                                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black portfolio-textbox">
+                                    Animation Creation
+                                  </div>
+                                </div>
+                                <div class="w3-display-container portfolio-image gs-slide">
+                                    <img src="images/gamestudio/gs4.jpg">
+                                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black portfolio-textbox">
+                                    Typedata (Writing/Game Balance)
+                                  </div>
+                                </div>
+                                <a class="w3-btn-floating-large w3-hover-dark-grey left-arrow-button" onclick="advanceSlide(-1)">
+                                   <i class="fa fa-arrow-left fa-2x"></i>
+                                </a>
+                                <a class="w3-btn-floating-large w3-hover-dark-grey right-arrow-button" onclick="advanceSlide(1)">
+                                    <i class="fa fa-arrow-right fa-2x"></i>
+                                </a><!-- /.portfolio-image-box-->
                             </div>
-
-                            <div class="w3-display-container mySlides">
-                              <img src="images/portfolio/2.jpg" class="portfolio-image">
-                              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black portfolio-textbox">
-                                  Mountains!
-                              </div>
+                            <div class="w3-display-container portfolio-content">
+                                <hr>
+                                <h3>GAME STUDIO TRILLIONAIRE</h3>
+                                <hr>
+                                <p>Originally starting out as a minor project to test our companies new developement tools,
+                                Game Studio quickly grew in scale. While many proposed features were set aside for future patches,
+                                thorugh my recommendations, our launch product soon included an achievement system and our integrated ad system.
+                                The game became closer to a passion project to me, and without a doubt is the game I've been most
+                                involved in so far; from brainstorming to feature development, balancing to animations,
+                                and uploading and launching, this game was a fantastic opportunity for me to learn new processes while honing
+                                others. In the end, I learned how to create animations using Unity's built-in tools, fine-tuned progression from 
+                                player/personal testing, and practiced more intricate programming through using State Machines and processing 
+                                extordinarily large numbers.</p>
+                                <hr>
+                                <ul>
+                                    <li><a href="https://itunes.apple.com/ca/app/game-studio-trillionaire/id1140491734" target="_blank" class="store-button">
+                                        <img src="images/appstore.png">
+                                    </a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=com.clipwiregames.gamestudio"  target="_blank" class="store-button">
+                                        <img src="images/googleplay.png">
+                                    </a></li>
+                                </ul>
+                                
                             </div>
-                             <div class="w3-display-container portfolio-content">
-                                <h3>GAMESTUDIO TRILLIONAIRE</h3>
-                            </div>
-                            <a class="w3-btn-floating-large w3-hover-dark-grey left-arrow-button" onclick="advanceSlide(-1)">
-                               <i class="fa fa-arrow-left fa-2x"></i>
-                            </a>
-                            <a class="w3-btn-floating-large w3-hover-dark-grey right-arrow-button" onclick="advanceSlide(1)">
-                                <i class="fa fa-arrow-right fa-2x"></i>
-                            </a>           
                         </div>            
                     </div> <!-- /.col-md-12 -->
 			</div> <!-- /#portfolio -->
@@ -399,7 +430,7 @@
 
         function showSlide(n) {
             var i;
-            var x = document.getElementsByClassName("mySlides");
+            var x = document.getElementsByClassName("gs-slide");
 
             //Roll back slides if exceeding index
             if (n > x.length) {slideIndex = 1}    
