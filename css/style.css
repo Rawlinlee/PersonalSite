@@ -139,7 +139,7 @@ li.contact a { border-color: var(--color-section5); }
 
 .section-title { 
     border-top: 8px solid;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     border-color: var(--color-section1);
 }
 .section-title h2 {
@@ -270,8 +270,10 @@ a.largeButton.homeBgColor {
 #portfolio h2 { 
     background-color: var(--color-section3); 
 }
-#portfolio p{
-    color:ghostwhite;
+#portfolio hr{
+    color: #777777;
+    background-color: grey;
+    border-color: grey;
 }
 .portfolioBgColor {
     background: var(--color-section3);
@@ -280,13 +282,14 @@ a.largeButton.homeBgColor {
     background-color: var(--color-button-hover); 
 }
 
-.portfolio-item { 
+.portfolio-item {
+    background: #EEEEEE;
     padding: 40px 40px;
-    border: 50px;
-    border-color: var(--color-section3); 
     max-width:100%;
     position:relative;
+    border: 1px solid;
     box-sizing: border-box;
+    outline: 1000px;
     display: flex;
     flex-direction: column;
     min-height: 80vh;
@@ -296,8 +299,12 @@ a.largeButton.homeBgColor {
     font-size: 180%;
     font-weight: 400;
     text-transform: none;
-    color: white;
     text-align: center;
+    color: var(--color-section3); 
+}
+.portfolio-content h5{
+    text-align: center;
+    font-size: 110%;
 }
 .portfolio-content{
     width:100%;
@@ -306,12 +313,19 @@ a.largeButton.homeBgColor {
 }
 .portfolio-image-box{
     width:100%;
+    position: relative;
+    max-width: none;
 }
 .portfolio-image img{
     width:100%;
 }
 .portfolio-textbox{
     font-weight: 100;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: #000 0px 0px 5px;
+    -webkit-font-smoothing: antialiased;
+    padding-left: 70px;
 }
 
 a.largeButton.portfolioBgColor { 
@@ -322,7 +336,7 @@ a.largeButton.portfolioBgColor {
     background-color: var(--color-section3);
     opacity: 0.7;
     position:absolute;
-    top: 40%;
+    bottom:0%;
 }
 .left-arrow-button{
     border-top-left-radius: 30%;
@@ -337,6 +351,7 @@ a.largeButton.portfolioBgColor {
 .portfolio-item ul{
     text-align: center;
     padding: 0;
+    margin-bottom: 0px;
 }
 .portfolio-item ul li { 
     display: inline; 
@@ -348,21 +363,6 @@ a.largeButton.portfolioBgColor {
     width:30%;
 }
 
-.portfolio-thumb { overflow: hidden; position: relative; }
-.portfolio-thumb img { width: 100%; height: auto; }
-.portfolio-thumb .overlay-p { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(41, 128, 185, 0.4); visibility: hidden; opacity: 0; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
-.portfolio-thumb .overlay-p a { position: absolute; top: 50%; margin-top: -12px; left: 50%; margin-left: -15px; color: white; }
-
-.portfolio-item { margin-bottom: 40px; overflow: hidden; }
-.portfolio-item:hover .overlay-p { visibility: visible; opacity: 1; }
-
-.portfolio-title { width: 100%; text-align: center; }
-
-.portfolio-title a { color: var(--color-section3); font-size: 18px; text-transform: uppercase; }
-
-.load-more { width: 100%; text-align: center; }
-
-
 /********** About Me Section *********************************************/
 
 #about h2 {
@@ -372,13 +372,17 @@ a.largeButton.portfolioBgColor {
 #about h3{
     color: var(--color-section4);
 }
+#about section-title{
+    margin-bottom: 20px;
+}
 
 .about-thumb h3{
     
 }
 .about-thumb img{
     width: 100%;
-    height: auto; 
+    height: auto;
+    border-radius: 50%;
 }
 
 .our-story { 

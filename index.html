@@ -62,27 +62,27 @@
                     
 						<li>
 							<div class="slider-caption">
-								<h2>Responsive Layout</h2>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
-								<a href="#" class="largeButton homeBgColor">Read More</a>
+								<h2>My Personal Webfolio</h2>
+                                <p>Thanks for visiting!</p>
+								<a href="#resume" class="largeButton homeBgColor">Read More</a>
 							</div>
 							<img src="images/slide1.jpg" alt="Slide 1">
 						</li>
                         
 						<li>
 							<div class="slider-caption">
-								<h2>Portfolio Website</h2>
-								<p>Fusce convallis enim vitae sagittis mollis. Sed bibendum ultricies dignissim.</p>
-								<a href="#" class="largeButton homeBgColor">Details</a>
+								<h2>Programming Projects</h2>
+								<p>Check out a few of the projects I worked on!</p>
+								<a href="#portfolio" class="largeButton homeBgColor">Details</a>
 							</div>
 							<img src="images/slide2.jpg" alt="Slide 2">
 						</li>
                         
                         <li>
 							<div class="slider-caption">
-								<h2>Free Templates</h2>
-								<p>All templates are free to download and use for your personal or commercial websites.</p>
-								<a href="#" class="largeButton homeBgColor">Downloads</a>
+								<h2>Start a Conversation</h2>
+								<p>Interested? Message me on LinkedIn, or email below.</p>
+								<a href="https://ca.linkedin.com/in/roland-li" target="_blank" class="largeButton homeBgColor">Linked In</a>
 							</div>
 							<img src="images/slide3.jpg" alt="Slide 3">
 						</li>
@@ -95,7 +95,7 @@
 					<div class="col-md-12">
 						<div class="welcome-text">
 							<h2>Quote of The Day</h2>
-							<p>Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning. ― Rick Cook, The Wizardry Compiled</p>
+							<p id="quote">Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning. ― Rick Cook, The Wizardry Compiled</p>
 						</div>
 					</div>
 				</div>
@@ -208,13 +208,15 @@
                         <hr>
                         <h3>Work Expierence</h3>
                         <hr>
-                        <h4>Junior Software Developer</h4>
+                        <h4>Front-End Developer</h4>
                         <h5><i>Clipwire Games, Markham, ON</i></h5>
                             <div class="my-expierence-content">
                                 <h5>May - August 2016 (Employee)</h5>
                                 <li>Lead the full process of the creation of functional, informative, user-friendly UI</li>
                                 <li>Cooperated with the team to ensure logical development and implementation plans</li>
                                 <li>Managed self-driven efforts in creative design and game balance, plus everything below</li>
+                                <li>Utilized Excel sheets and formulas to generate data and fair game balance</li>
+                                <li>Harnessed creativity to create fun and thematic animations and story</li>
                                 <br>
                                 <h5>June - August 2015 (Employee)</h5>
                                 <h5>Feburary - June 2015 (High School Co-op)</h5>
@@ -228,7 +230,7 @@
                             </div>
                         <hr>
                         <h4>Assistant Editor</h4>
-                        <h5><i>Clipwire Games, Markham, ON</i></h5>
+                        <h5><i>Bond Education Group, Toronto, ON</i></h5>
                             <div class="my-expierence-content">
                                 <h5>August 2014 (Volunteer)</h5>
                                 <li>Learned how to use various software applications (e.g. Joombla, CorelDraw)</li>
@@ -252,8 +254,14 @@
 				</div> <!-- /.row -->
 				<div class="row">
                     <div class="col-md-12">
-                        <div class="w3-content portfolio-item" style="background-color: #90C695;">
-                            <div class="portfolio-image-box">
+                        <div class="portfolio-item">
+                            <div class="w3-content portfolio-image-box">
+                                <a class="w3-btn-floating-large w3-hover-dark-grey left-arrow-button" onclick="advanceSlide(-1)">
+                                     <i class="fa fa-arrow-left fa-2x"></i>
+                                </a>
+                                <a class="w3-btn-floating-large w3-hover-dark-grey right-arrow-button" onclick="advanceSlide(1)">
+                                    <i class="fa fa-arrow-right fa-2x"></i>
+                                </a>
                                 <div class="w3-display-container portfolio-image gs-slide">
                                     <img src="images/gamestudio/gs1.jpg">
                                 </div>
@@ -272,26 +280,22 @@
                                 <div class="w3-display-container portfolio-image gs-slide">
                                     <img src="images/gamestudio/gs4.jpg">
                                     <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black portfolio-textbox">
-                                    Typedata (Writing/Game Balance)
+                                    Type Data (Writing/Game Balance)
                                   </div>
                                 </div>
-                                <a class="w3-btn-floating-large w3-hover-dark-grey left-arrow-button" onclick="advanceSlide(-1)">
-                                   <i class="fa fa-arrow-left fa-2x"></i>
-                                </a>
-                                <a class="w3-btn-floating-large w3-hover-dark-grey right-arrow-button" onclick="advanceSlide(1)">
-                                    <i class="fa fa-arrow-right fa-2x"></i>
-                                </a><!-- /.portfolio-image-box-->
-                            </div>
+                            </div><!-- /.portfolio-image-box-->
                             <div class="w3-display-container portfolio-content">
                                 <hr>
                                 <h3>GAME STUDIO TRILLIONAIRE</h3>
+                                <h5>Work Period: ~1 Month</h5>
                                 <hr>
                                 <p>Originally starting out as a minor project to test our companies new developement tools,
                                 Game Studio quickly grew in scale. While many proposed features were set aside for future patches,
-                                thorugh my recommendations, our launch product soon included an achievement system and our integrated ad system.
+                                through my recommendations, our launch product soon included an achievement system and an integrated ad system.
                                 The game became closer to a passion project to me, and without a doubt is the game I've been most
-                                involved in so far; from brainstorming to feature development, balancing to animations,
-                                and uploading and launching, this game was a fantastic opportunity for me to learn new processes while honing
+                                involved in so far. With other projects in the works, my boss assignmened me to complete the game post-alpha; 
+                                my roles varying from brainstorming to feature development, balancing to animations,
+                                and even uploading and launching. This game was a fantastic opportunity for me to learn new processes while honing
                                 others. In the end, I learned how to create animations using Unity's built-in tools, fine-tuned progression from 
                                 player/personal testing, and practiced more intricate programming through using State Machines and processing 
                                 extordinarily large numbers.</p>
@@ -308,6 +312,7 @@
                             </div>
                         </div>            
                     </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
 			</div> <!-- /#portfolio -->
 
             <!-- About Me Section-->
@@ -315,7 +320,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="section-title">
-							<h2>About Us</h2>
+							<h2>About Me</h2>
 						</div>
 					</div>
 				</div>
@@ -323,27 +328,39 @@
 					<div class="col-md-3">
 						<div class="member-item">
 							<div class="about-thumb">
-								<img src="images/team1.jpg" alt="girl 1">
+								<img src="images/slide3.jpg">
 							</div>
 						</div>
 					</div> <!-- /.col-md-3 -->
                     <div class="col-md-9">
                         <div class="member-content">
-								<h4>Tanna Dona</h4>
-								<p>Marketing Director</p>
+								<h4>Roland Li</h4>
+								<p>BBA/BCS Student | Front End Developer | Creative Designer</p>
 				        </div>
                     </div> <!-- /.col-md-9 -->
 				</div> <!-- /.row -->
 				<div class="row our-story">
-					<div class="col-md-8">
-						<h3>Furious Teamwork</h3>
-					  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, exercitationem, laboriosam, modi non quisquam voluptas accusamus numquam ipsum reiciendis saepe veniam cupiditate explicabo autem. Quisque in metus tristique, gravida dolor ut, varius neque. Maecenas ac risus aliquam, facilisis massa id, vulputate elit.<br><br>
-						Curabitur pretium arcu dictum, faucibus diam quis, commodo turpis. Proin viverra, risus eget egestas sodales, felis ante scelerisque ligula, eget condimentum diam ligula eu tellus. Repudiandae tempore dolore deserunt nemo voluptatum consectetur aspernatur expedita aliquid iste illo enim molestias vel animi quod.
-					</div>
-					<div class="col-md-4">
-						<div class="story-image">
-							<img src="images/responsive-design.jpg" alt="">
-						</div>
+					<div class="col-md-12">
+						<h3>Why Double Degree?</h3>
+					  	As an INTJ, I've always been naturally curious- which is perhaps why I've always been interested in a wide variety of things, 
+                        such as drawing/art, design, cooking, natural sciences, human pyschology, technological developments, and of course, programming and yes, business too! 
+                        As I've developed as a programmer, I've become increasing infatiuated with the way programming was able to bridge my many interests, but perhaps more
+                        importantly, how it's been able to mentally stimulate and push me to learn and harden my own logic. It's so incredibly cool and satisfying to be able to 
+                        struggle with a problem, to expand your technical skills to solve them, and ultimately produce a "virtually tangible" product that you can share and expierence.
+                        <br><br>
+                        That being said, I look forward to continue to expand my skill sets and truly define who I am and what I enjoy doing. For that reason, I'm also pursing a
+                        business adminstration degree. Whilst I may be seemingly treating this as but a side-objective, business in it's own right is a vast, general skill 
+                        with a wide array of applications. It is a very core part of society as we know it, and as such, I am sure that the skills I've acquired in the process
+                        will doubtless be of use- despite what people may generally believe. From the soft-skills alone, I know this won't be an investment I regret!
+                        <br><br>
+                        <h3>Interesting Tidbits</h3>
+                        <ul>
+                            <li>Narrated some sweet promotional movie-showing videos as UW Film's Marketing Executive. Why not 
+                                <a href="https://www.facebook.com/uwfilms/videos/183387635359009" target="_blank">check one out</a>?</li>
+                            <li>Was given an appreciative letter/drawing from the kids I supervised when I volunteered as a camp councellor (made everything so worth it).</li>
+                            <li>Won a Language Award upon Elementary School graduation, which I attribute to the shameless compliments I gave to my teachers and the (terribly disruptive)
+                            jokes I'd crack with my groupmates in class.</li>
+                        </ul>
 					</div>
 				</div> <!-- /.row -->
 			</div> <!-- /#about -->
@@ -353,7 +370,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="section-title">
-							<h2>Contact Us</h2>
+							<h2>Contact Me</h2>
 						</div> <!-- /.section-title -->
 					</div> <!-- /.col-md-12 -->
 				</div> <!-- /.row -->
@@ -392,8 +409,8 @@
 						<div class="col-md-12">
 							<div class="social-footer">
 								<ul>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-                                    <li><a href="#" class="fa fa-github"></a></li>
+									<li><a href="https://ca.linkedin.com/in/roland-li" target="_blank" class="fa fa-linkedin"></a></li>
+                                    <li><a href="https://github.com/Roland-Li" target="_blank" class="fa fa-github"></a></li>
 								</ul>
 							</div> <!-- /.social-footer -->
 						</div> <!-- /.col-md-12 -->
@@ -403,13 +420,7 @@
 			<div class="bottom-footer">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-6">
-							<p class="copyright">Copyright © 2084 <a href="#">Your Company Name</a>
-                            </p>
-						</div> <!-- /.col-md-6 -->
-						<div class="col-md-6 credits">
-							<p><!-- Design: <a rel="nofollow" href="http://www.templatemo.com/tm-394-sonic" target="_parent">Sonic</a> --></p>
-						</div> <!-- /.col-md-6 -->
+                        
 					</div> <!-- /.row -->
 				</div> <!-- /.container-fluid -->
 			</div> <!-- /.bottom-footer -->
@@ -445,12 +456,31 @@
             x[slideIndex-1].style.display = "block";  
         }
     </script>
-    
-    
+        
+    <!--- Daily Quote Function -->
+    <script>
+        var d = new Date();
+        var weekday = new Array(7);
+        weekday[0]=  "&#34Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.&#34 -Rick Cook, The Wizardry Compiled";
+        weekday[1] = "&#34Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live&#34- John Woods";
+        weekday[2] = "&#34Programs must be written for people to read, and only incidentally for machines to execute.&#34- Harold Abelson, Structure and Interpretation of Computer Programs";
+        weekday[3] = "&#34Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.&#34- Waseem Latif";
+        weekday[4] = "&#34If you had to identify, in one word, the reason why the human race has not achieved, and never will achieve, its full potential, that word would be 'meetings'.&#34- Dave Barry";
+        weekday[5] = "&#34If you think your boss is stupid, remember: you wouldn’t have a job if he was any smarter.&#34- John M. Gottman";
+        weekday[6] = "&#34If you can dream it, then you can achieve it. You will get all you want in life if you help enough other people get what they want.&#34- Zig Ziglar";
+        setDailyQuote();
+        
+        function setDailyQuote(){
+            document.getElementById("quote").innerHTML = weekday[d.getDay()];
+        }
+    </script>
+        
 	<!-- JavaScripts -->
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery.singlePageNav.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/jquery.flexslider.js">
+        animation: "slide", animationSpeed: Modernizr.touch ? 400 : 1000
+    </script>
 	<script src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/custom.js"></script>
     <script>
