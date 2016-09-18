@@ -151,7 +151,7 @@ li.contact a { border-color: var(--color-section5); }
     font-size: 120%; 
 }
 
-a.largeButton { 
+.largeButton { 
     color: white; 
     text-transform: uppercase; 
     font-weight: 700;
@@ -159,12 +159,8 @@ a.largeButton {
     display: inline-block;
     padding: 10px 20px;
     border-bottom: 3px solid;
-}
-
-a.largeButton.homeBgColor {
     border-color: #b4b4b4;
 }
-
 
 /********** Home Section *********************************************/
 
@@ -328,9 +324,6 @@ a.largeButton.homeBgColor {
     padding-left: 70px;
 }
 
-a.largeButton.portfolioBgColor { 
-    border-color:  var(--color-button-hover);
-}
 
 .left-arrow-button, .right-arrow-button{
     background-color: var(--color-section3);
@@ -418,13 +411,6 @@ a.largeButton.portfolioBgColor {
     background-color: var(--color-button-hover); 
 }
 
-a.largeButton.contactBgColor { 
-    border-color:  var(--color-button-hover);
-}
-
-.contact-form {
-    margin-top: 60px;
-}
 .contact-form input, .contact-form textarea {
     width: 100%;
     display: block;
@@ -433,7 +419,7 @@ a.largeButton.contactBgColor {
     outline: 0;
 }
 .contact-form input { 
-    height: 46px; 
+    height: 50px; 
     margin-bottom: 30px;
 }
 .contact-form label {
@@ -444,9 +430,31 @@ a.largeButton.contactBgColor {
     color: red; 
     margin-left: 5px; 
 }
+.contact-form-result{
+    visibility: hidden;
+    display: block;
+    text-align: center;
+    height: 0px;
+    width: inherit;
+    font-size:500;
+}
+.contact-form-result h3{
+    font: 14px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif; 
+}
+.iframe-container{
+    padding: 0px 15px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    align-content: center;
+}
 
 .submit-btn {
-    margin-top: 30px; 
+    margin-top: 30px;
+}
+.submit-btn button{
+    height: 80px;
+    width: 100%;
 }
 
 
