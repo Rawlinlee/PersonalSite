@@ -170,8 +170,8 @@ if (typeof Object.create !== 'function') {
     
     $.fn.singlePageNav.defaults = {
         offset: 0,
-        threshold: 120,
-        speed: 400,
+        threshold: 10,
+        speed: 800,
         currentClass: 'current',
         easing: 'swing',
         updateHash: false,

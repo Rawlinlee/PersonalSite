@@ -26,7 +26,7 @@
         </a>
         <div class="navigation responsive-menu">
             <ul>
-                <li class="home"><a href="#templatemo">Home</a></li> 
+                <li class="home"><a href="#home">Home</a></li> 
 	            <li class="resume"><a href="#resume">Resume</a></li>
 	            <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
                 <li class="about"><a href="#about">About Us</a></li>
@@ -36,14 +36,14 @@
     </div> <!-- /responsive_navigation -->
 
 	<div id="main-sidebar" class="hidden-xs hidden-sm">
-		<div class="logo">
-			<a href="#"><h1>Roland Li</h1></a>
+		<div class="logo navigation">
+			<a href="#home"><h1>Roland Li</h1></a>
 			<h6>BBA/BCS Student &amp; Employee</h6>
 		</div> <!-- /.logo -->
 
 		<div class="navigation">
 	        <ul class="main-menu">
-	            <li class="home"><a href="#templatemo">Home</a></li>
+	            <li class="home"><a href="#home">Home</a></li>
 	            <li class="resume"><a href="#resume">Resume</a></li>
 	            <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
                 <li class="about"><a href="#about">About Me</a></li>
@@ -55,13 +55,13 @@
 
 	<div id="main-content">
 
-		<div id="templatemo">
+		<div id="home">
 			<div class="main-slider">
 				<div class="flexslider">
 					<ul class="slides">
                     
 						<li>
-							<div class="slider-caption">
+							<div class="slider-caption navigation">
 								<h2>My Personal Webfolio</h2>
                                 <p>If you're looking to hire, I may be right for you!</p>
 								<a href="#resume" class="largeButton homeBgColor">Learn More</a>
@@ -70,7 +70,7 @@
 						</li>
                         
 						<li>
-							<div class="slider-caption">
+							<div class="slider-caption navigation">
 								<h2>Programming Projects</h2>
 								<p>Check out a few of the projects I worked on!</p>
 								<a href="#portfolio" class="largeButton homeBgColor">Details</a>
@@ -109,7 +109,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="section-title">
-							<h2>resume</h2>
+							<h2>Resume</h2>
 						</div> <!-- /.section-title -->
 					</div> <!-- /.col-md-12 -->
 				</div> <!-- /.row -->
@@ -355,7 +355,7 @@
                         <br><br>
                         <h3>Interesting Tidbits</h3>
                         <ul>
-                            <li>Painstakingly created this site using html/css which I learned on the fly. Stay tooned for more updates!</li>
+                            <li>Painstakingly created this site using html/css, which I learned as I went. Stay tuned for more updates!</li>
                             <li>Narrated some sweet promotional movie-showing videos as UW Film's Marketing Executive. Why not 
                                 <a href="https://www.facebook.com/uwfilms/videos/183387635359009" target="_blank">check one out</a>?</li>
                             <li>Was given an appreciative letter/drawing from the kids I supervised when I volunteered as a camp councellor (made everything so worth it).</li>
@@ -480,18 +480,12 @@
     </script>
         
 	<!-- JavaScripts -->
-	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.singlePageNav.js"></script>
 	<script src="js/jquery.flexslider.js">
         animation: "slide", animationSpeed: Modernizr.touch ? 400 : 1000
     </script>
-	<script src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/custom.js"></script>
-    <script>
-		$(document).ready(function(){
-			$("a[data-gal^='prettyPhoto']").prettyPhoto({hook: 'data-gal'});
-		});
-    </script>
     
     <!-- Email Submit -->
     <script>  
