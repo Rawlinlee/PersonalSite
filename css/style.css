@@ -323,6 +323,7 @@ li.contact a { border-color: var(--color-section5); }
     color: black;
     text-shadow: white 0px 0px 20px;
     -webkit-font-smoothing: antialiased;
+    font-size:110%;
 }
 .portfolio-textbox-white{
     font-family: 'Roboto', sans-serif;
@@ -330,6 +331,7 @@ li.contact a { border-color: var(--color-section5); }
     color: white;
     text-shadow: black 0px 0px 20px;
     -webkit-font-smoothing: antialiased;
+    font-size:110%;
 }
 
 
