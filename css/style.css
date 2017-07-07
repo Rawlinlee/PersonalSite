@@ -257,7 +257,9 @@ li.contact a { border-color: var(--color-section5); }
 .progress-bar { 
     background-color: var(--color-section2);
     text-transform: uppercase;
-    font-size: 80%; 
+    font-size: 80%;
+    text-align: left;
+    padding-left: 10%;
 }
 
 
@@ -315,13 +317,19 @@ li.contact a { border-color: var(--color-section5); }
 .portfolio-image img{
     width:100%;
 }
-.portfolio-textbox{
-    font-weight: 100;
-    color: #fff;
+.portfolio-textbox-black{
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    text-shadow: #000 0px 0px 5px;
+    color: black;
+    text-shadow: white 0px 0px 20px;
     -webkit-font-smoothing: antialiased;
-    padding-left: 70px;
+}
+.portfolio-textbox-white{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-shadow: black 0px 0px 20px;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -375,35 +383,35 @@ li.contact a { border-color: var(--color-section5); }
 }
 
 
-.about-thumb{
-    
+.about-intro-right{
+    display: inline-block;
+    vertical-align: bottom;
+    position: absolute;
+    bottom:15%;
 }
-.about-thumb img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
 .about-intro{
-    
+    height:18vh;
+}
+.about-intro img{
+    max-width: 16%;
+    border-radius: 50%;
+    float:left;
+    margin-right: 15px;
 }
 .about-intro h3{
     font-weight: 600;
     font-size: 180%;
     padding-right: 10px;
     margin: 0;
-    line-height: 45px;
     vertical-align:bottom;
 }
 .about-intro p{
     font-weight: 400;
+    display:inline-block;
 }
 
 .about-intro ul{
     padding-left: 0px;
-    list-style: none;
-    vertical-align: middle;
-    height: 100%;
 }
 .about-intro ul li { 
    display: inline-block; 
