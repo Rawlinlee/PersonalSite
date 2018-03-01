@@ -11,41 +11,41 @@
     --color-section3: #4ea1d8;
     --color-section4: #6ab0de;
     --color-section5: #86bfe4;
-    
+
     --color-button-hover: #16709f;
 }
 
 .main-menu, .responsive-menu ul, .social-member, .progess-bars, .first-footer .social-footer ul {
     padding: 0;
-    margin: 0; 
+    margin: 0;
     list-style: none;
 }
 
-body { 
-    font: 14px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif; 
-    color: #777777; 
-    font-weight: 300; 
+body {
+    font: 14px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif;
+    color: #777777;
+    font-weight: 300;
     font-style: normal;
     font-size: 2.5vmin;
-    
+
     /* Fix for webkit rendering */
-    -webkit-font-smoothing: antialiased; 
-    -webkit-text-size-adjust: 100%; 
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
 }
 
-a, a:hover, a:focus { 
-    text-decoration: none; 
+a, a:hover, a:focus {
+    text-decoration: none;
     -webkit-transition: all 150ms ease-in;
     -moz-transition: all 150ms ease-in;
-    -o-transition: all 150ms ease-in; 
-    transition: all 150ms ease-in; 
+    -o-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
 }
 
-h1, h2, h3, h4, h5, h6 { 
-    font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif; 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
 }
 
-*, *:before, *:after { 
+*, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -53,28 +53,28 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /********** Main Bar Formatting **********/
-#main-sidebar { 
+#main-sidebar {
     float: left;
     width: 17%;
     height: 100%;
     position: fixed;
     background-color: #495054;
-    color: white; 
+    color: white;
     margin-left: 0%;
 }
 
 /* Logo Formating */
 
-.logo { 
+.logo {
     margin: 20% 0;
     background-color: #2980b9;
     padding: 25px 25px;
     text-align: center;
 }
-.logo a { 
-    color: white; 
+.logo a {
+    color: white;
 }
-.logo a h1 { 
+.logo a h1 {
     text-transform: uppercase;
     text-overflow: ellipsis;
     display: inline-block;
@@ -83,20 +83,20 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 .logo h6 {
-    color: #bee3f6; 
+    color: #bee3f6;
     font-size: 80%;
 }
 
 /* Menu Button Formatting */
 
-.main-menu { 
+.main-menu {
     text-align: center;
 }
-.main-menu li { 
+.main-menu li {
     margin-bottom: 1px;
 }
-.main-menu li a { 
-    color: white; 
+.main-menu li a {
+    color: white;
     text-transform: uppercase;
     font-size: 110%;
     display: block;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: all 150ms ease-in;
     transition: all 150ms ease-in;
 }
-.main-menu li a:hover { 
+.main-menu li a:hover {
     background-color: #34393b;
 }
 
@@ -127,9 +127,9 @@ li.contact a { border-color: var(--color-section5); }
 
 
 /********** General Main Content Formatting **********/
-#main-content, .full-width-slider { 
-    float: right; 
-    width: 83%; 
+#main-content, .full-width-slider {
+    float: right;
+    width: 83%;
 }
 
 .section-content {
@@ -137,7 +137,7 @@ li.contact a { border-color: var(--color-section5); }
     margin-bottom: 100px;
 }
 
-.section-title { 
+.section-title {
     border-top: 8px solid;
     margin-bottom: 40px;
     border-color: var(--color-section1);
@@ -148,14 +148,14 @@ li.contact a { border-color: var(--color-section5); }
     color: white;
     text-transform: uppercase;
     font-weight: 300; margin: 0;
-    font-size: 120%; 
+    font-size: 120%;
 }
 
-.largeButton { 
-    color: white; 
-    text-transform: uppercase; 
+.largeButton {
+    color: white;
+    text-transform: uppercase;
     font-weight: 700;
-    font-size: 130%; 
+    font-size: 130%;
     display: inline-block;
     padding: 10px 20px;
     border-bottom: 3px solid;
@@ -167,52 +167,56 @@ li.contact a { border-color: var(--color-section5); }
 .homeBgColor {
     background: var(--color-section1);
 }
-.homeBgColor:hover { 
-    background-color: var(--color-button-hover); 
+.homeBgColor:hover {
+    background-color: var(--color-button-hover);
 }
 
 
 /********** Resume Section *********************************************/
 
 #resume h2 {
-    background-color: var(--color-section2); 
+    background-color: var(--color-section2);
+}
+#resume h3 {
+  text-transform: uppercase;
+  font-size: 140%;
 }
 #resume h4{
     font-weight: 700;
-    text-transform: uppercase; 
-    font-size: 120%; 
-    margin-bottom: 15px; 
+    text-transform: uppercase;
+    font-size: 120%;
+    margin-bottom: 15px;
 }
 #resume h5{
     font-weight: 600;
-    font-size: 110%; 
-    margin-bottom: 10px; 
+    font-size: 110%;
+    margin-bottom: 10px;
 }
 #resume li{
     font-weight: 400;
 }
 
 .resume-item {
-    background-color: var(--color-section2); 
+    background-color: var(--color-section2);
     height: auto;
     color: white;
     margin: 0 auto;
 }
-.resume-item .resume-icon { 
-    width: 25%; 
-    float: left; 
-    overflow: hidden; 
+.resume-item .resume-icon {
+    width: 25%;
+    float: left;
+    overflow: hidden;
     display: inline-block;
     text-align: center;
-    margin-top: 20px; 
-    height: 100%; 
+    margin-top: 20px;
+    height: 100%;
 }
 
 
-.resume-item .resume-content { 
-    width: 75%; 
+.resume-item .resume-content {
+    width: 75%;
     overflow: hidden;
-    text-align: center; 
+    text-align: center;
 }
 .resume-content{
     border-left: 3px;
@@ -229,12 +233,12 @@ li.contact a { border-color: var(--color-section5); }
     margin-bottom: 10px;
 }
 
-.my-skills h3, .my-education h3, .my-expierence h3{ 
+.my-skills h3, .my-education h3, .my-experience h3{
     color: var(--color-section2);
     font-weight: 300;
-    text-transform: uppercase; 
-    font-size: 170%; 
-    margin-bottom: 15px; 
+    text-transform: uppercase;
+    font-size: 170%;
+    margin-bottom: 15px;
 }
 
 .my-skills {
@@ -246,25 +250,25 @@ li.contact a { border-color: var(--color-section5); }
     margin: 10px 5px;
 }
 
-.my-expierence{
+.my-experience{
     margin: 10px 5px;
 }
-.my-expierence-content{
+.my-experience-content{
     margin-top: 15px;
     margin-left: 25px;
 }
 
-.progress-bar { 
+.progress-bar {
     background-color: var(--color-section2);
     text-transform: uppercase;
-    font-size: 80%; 
+    font-size: 80%;
 }
 
 
 /********** Portfolio Section *********************************************/
 
-#portfolio h2 { 
-    background-color: var(--color-section3); 
+#portfolio h2 {
+    background-color: var(--color-section3);
 }
 #portfolio hr{
     color: #777777;
@@ -275,7 +279,7 @@ li.contact a { border-color: var(--color-section5); }
     background: var(--color-section3);
 }
 .portfolioBgColor:hover {
-    background-color: var(--color-button-hover); 
+    background-color: var(--color-button-hover);
 }
 
 .portfolio-item {
@@ -296,7 +300,7 @@ li.contact a { border-color: var(--color-section5); }
     font-weight: 400;
     text-transform: none;
     text-align: center;
-    color: var(--color-section3); 
+    color: var(--color-section3);
 }
 .portfolio-content h5{
     text-align: center;
@@ -346,8 +350,8 @@ li.contact a { border-color: var(--color-section5); }
     padding: 0;
     margin-bottom: 0px;
 }
-.portfolio-item ul li { 
-    display: inline; 
+.portfolio-item ul li {
+    display: inline;
 }
 .store-button{
     padding: 0 20px;
@@ -359,7 +363,7 @@ li.contact a { border-color: var(--color-section5); }
 /********** About Me Section *********************************************/
 
 #about h2 {
-    background-color: var(--color-section4); 
+    background-color: var(--color-section4);
 }
 
 #about h3{
@@ -376,7 +380,7 @@ li.contact a { border-color: var(--color-section5); }
 
 
 .about-thumb{
-    
+
 }
 .about-thumb img{
     width: 100%;
@@ -385,7 +389,7 @@ li.contact a { border-color: var(--color-section5); }
 }
 
 .about-intro{
-    
+
 }
 .about-intro h3{
     font-weight: 600;
@@ -405,8 +409,8 @@ li.contact a { border-color: var(--color-section5); }
     vertical-align: middle;
     height: 100%;
 }
-.about-intro ul li { 
-   display: inline-block; 
+.about-intro ul li {
+   display: inline-block;
 }
 .about-intro ul li a {
     width: 100%;
@@ -414,19 +418,19 @@ li.contact a { border-color: var(--color-section5); }
     -webkit-border-radius: 3px;
     border-radius: 3px;
     margin: 0px 15px;
-    text-align: center; 
-    line-height: 200%; 
-    color: grey; 
+    text-align: center;
+    line-height: 200%;
+    color: grey;
 }
 
-.about-description { 
-    margin-top: 40px; 
+.about-description {
+    margin-top: 40px;
 }
-.about-description h3 { 
-    font-weight: 300; 
-    text-transform: uppercase; 
-    font-size: 130%; 
-    margin: 0 0 20px 0; 
+.about-description h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 130%;
+    margin: 0 0 20px 0;
 }
 
 /********** Contact Me Section *********************************************/
@@ -435,22 +439,22 @@ li.contact a { border-color: var(--color-section5); }
     background-color: var(--color-section5);
 }
 
-.contactBgColor { 
-    background: var(--color-section5); 
+.contactBgColor {
+    background: var(--color-section5);
 }
-.contactBgColor:hover { 
-    background-color: var(--color-button-hover); 
+.contactBgColor:hover {
+    background-color: var(--color-button-hover);
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     display: block;
-    border: 1px solid #d5dbe0; 
+    border: 1px solid #d5dbe0;
     padding: 10px 15px;
     outline: 0;
 }
-.contact-form input { 
-    height: 50px; 
+.contact-form input {
+    height: 50px;
     margin-bottom: 30px;
 }
 .contact-form label {
@@ -458,8 +462,8 @@ li.contact a { border-color: var(--color-section5); }
 }
 .contact-form label.required:after {
     content: "*";
-    color: red; 
-    margin-left: 5px; 
+    color: red;
+    margin-left: 5px;
 }
 .contact-form-result{
     visibility: hidden;
@@ -469,7 +473,7 @@ li.contact a { border-color: var(--color-section5); }
     width: inherit;
 }
 .contact-form-result h3{
-    font: 14px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif; 
+    font: 14px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif;
 }
 .iframe-container{
     padding: 0px 15px;
@@ -495,6 +499,19 @@ li.contact a { border-color: var(--color-section5); }
 .welcome-text h2 { color: var(--color-section1); font-weight: 300; text-transform: uppercase; font-size: 180%; }
 .welcome-text p { color: #aaaaaa; }
 
+/********** Alert Banner Design *********************************************/
+
+.alert-banner {
+  padding: 60px;
+  text-align: center;
+  border-bottom: 8px solid;
+  border-color: var(--color-section1);
+}
+
+.alert-banner h2 { color: var(--color-section1); font-weight: 500; text-transform: uppercase; font-size: 210%; }
+.alert-banner h3 { font-size: 120%;}
+
+
 
 /********** Image Slider Design ************************************************/
 
@@ -519,14 +536,14 @@ li.contact a { border-color: var(--color-section5); }
 
 /********** Footer Section Design *********************************************/
 
-.first-footer { 
+.first-footer {
     background-color: #495054;
-    padding: 25px; 
+    padding: 25px;
     text-align: center;
     border-left: 5px solid #313639;
 }
-.first-footer .social-footer ul li { 
-    display: inline; 
+.first-footer .social-footer ul li {
+    display: inline;
 }
 .first-footer .social-footer ul li a {
     width: 40px;
@@ -537,20 +554,20 @@ li.contact a { border-color: var(--color-section5); }
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */
     background-color: #313639;
-    text-align: center; 
-    line-height: 40px; 
-    color: white; 
+    text-align: center;
+    line-height: 40px;
+    color: white;
 }
 
-.bottom-footer { 
+.bottom-footer {
     background-color: #313639;
-    color: #949da2; 
-    padding: 25px 7% 16px 7%; 
+    color: #949da2;
+    padding: 25px 7% 16px 7%;
 }
 .bottom-footer a {
     color: white;
 }
-.bottom-footer .credits { 
+.bottom-footer .credits {
     text-align: right;
 }
 
@@ -558,23 +575,23 @@ li.contact a { border-color: var(--color-section5); }
 /********** Responsive Menu Design *********************************************/
 
 a.menu-toggle-btn {
-    width: 100%; 
+    width: 100%;
     height: 60px;
-    background-color: var(--color-section1); 
-    text-align: center; 
+    background-color: var(--color-section1);
+    text-align: center;
     line-height: 60px;
-    display: block; 
+    display: block;
     color: white;
 }
-a.menu-toggle-btn i { 
+a.menu-toggle-btn i {
     line-height: 60px;
 }
 
-.responsive-navigation { 
-    position: relative; 
-    width: 100%; 
+.responsive-navigation {
+    position: relative;
+    width: 100%;
     display: block;
-    z-index: 9999; 
+    z-index: 9999;
 }
 
 .responsive-menu {
@@ -583,9 +600,9 @@ a.menu-toggle-btn i {
 }
 .responsive-menu ul li a {
     color: white;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     display: block;
-    padding: 20px; 
+    padding: 20px;
     border-bottom: 1px solid #5a6267;
 }
 
@@ -596,27 +613,27 @@ a.menu-toggle-btn i {
     #main-content {
         width: 100%;
     }
-  .first-footer { 
-      border-left: 0; 
+  .first-footer {
+      border-left: 0;
     }
   .flexslider .slides, .flexslider, .main-slider {
-      height: auto; 
+      height: auto;
     }
   .resume-item {
       margin-bottom: 30px;
     }
   .progess-bars {
       margin-top: 40px;
-    } 
+    }
 }
 @media (max-width: 767px) {
-    .slider-caption a, .slider-caption p { 
-        display: none; 
+    .slider-caption a, .slider-caption p {
+        display: none;
         top: 50px !important;
-    } 
+    }
 }
 @media (max-width: 581px) {
-    .slider-caption { 
+    .slider-caption {
         display: none;
-    } 
+    }
 }

@@ -5,7 +5,7 @@ function IsNullOrEmptyString($my_string){
 
 if (IsNullOrEmptyString($_POST['email-id']) ||
     IsNullOrEmptyString($_POST['name-id']) ||
-    IsNullOrEmptyString($_POST['message-id']))  
+    IsNullOrEmptyString($_POST['message-id']))
 {
     echo "<h3>Please fill in the required info. Emails are strictly for me to reply to your message.<h3>";
 }
@@ -17,13 +17,14 @@ else
 
     $reply_email = $_POST['email-id'];
     $subject = $_POST['subject-id'];
-    $message = 'Actual Email Address: ' . $reply_email . "\n" . 'Name: ' . "\n" . $name . $_POST['message-id'];
+    $message = 'Actual Email Address: ' . $reply_email . "\n" . 'Name: ' . $_POST['name-id'] . "\n" . $_POST['message-id'];
     $name = $_POST['name-id'];
     $headers = 'From: ' . $feedback_email;
 
     //Send email
     $success = mail($admin_email, $subject, $message, $headers);
 
+    //TODO: Modify so a pop-up success modal is used instead
     if ($success)
     {
         echo "<h3>Email sent! Thanks for reaching out!<h3>";
