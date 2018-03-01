@@ -3,11 +3,23 @@ function IsNullOrEmptyString($my_string){
     return (!isset($my_string) || trim($my_string)==='');
 }
 
-if (IsNullOrEmptyString($_POST['email-id']) ||
-    IsNullOrEmptyString($_POST['name-id']) ||
-    IsNullOrEmptyString($_POST['message-id']))
+$reply_email = $_POST['email-id'];
+$subject = $_POST['subject-id'];
+$name = $_POST['name-id'];
+$message = $_POST['message-id'];
+
+if (IsNullOrEmptyString($reply_email) ||
+    IsNullOrEmptyString($subject) ||
+    IsNullOrEmptyString($name) ||
+    IsNullOrEmptyString($message))
 {
     echo "<h3>Please fill in the required info. Emails are strictly for me to reply to your message.<h3>";
+}
+elseif (!filter_var($reply_email, FILTER_VALIDATE_EMAIL) ||  //Basic email validator
+        !preg_match("/^[a-zA-z ]+$/", $name) || //Name is only alpha
+        !preg_match("/[a-zA-Z]/i", $subject)) //Subject doesn't contain letters
+{
+    echo "<h3>Some of the included information appears to be invalid. Please check and try again.<h3>";
 }
 else
 {
@@ -15,10 +27,8 @@ else
     $admin_email = 'rolaqspu'; //Due to certain host restrictions, send to site admin email
     $feedback_email = 'noreply@rolandli.xyz'; //Work around for host's email-spam filter
 
-    $reply_email = $_POST['email-id'];
-    $subject = $_POST['subject-id'];
-    $message = 'Actual Email Address: ' . $reply_email . "\n" . 'Name: ' . $_POST['name-id'] . "\n" . $_POST['message-id'];
-    $name = $_POST['name-id'];
+    $message = 'Actual Email Address: ' . $reply_email . "\n" . 'Name: ' . "\n" . $name . $message;
+
     $headers = 'From: ' . $feedback_email;
 
     //Send email
